@@ -61,6 +61,7 @@ h1, h2, h3, p {
 }
 .logo {
     display: block;
+
     padding-top: 25px;
     padding-bottom: 25px;
     margin-right: 92px;
@@ -109,9 +110,9 @@ h1, h2, h3, p {
 }
 .contact-icon {
     fill: var(--text-color);
-    margin: 0;
+    margin-right: 10px;
 }
-.contact-icon:hover, .contact-icon:focus {
+.contact-link:hover .contact-icon, .contact-link:focus .contact-icon {
     fill: var(--accent-text);
 }
 .site-list {
@@ -381,17 +382,20 @@ img {
     margin-right: 0 auto;
 }*/
 .clients-link:hover, .clients-link:focus {
-    color: var(--accent-text);
-    border: 1px solid var(--accent-text);
+    fill: #2196F3;
+    border-color: #2196f3;
 }
 .clients-icon {
-    fill: var(--text-color);
+    fill: #AFB1B8;
     margin: 0;
 }
-.clients-icon:hover, .clients-icon:focus {
-    fill: var(--accent-text);
+.clients-icon:hover,
+.clients-icon:focus {
+    fill: #2196F3;
 }
-
+/* .clients-icon:hover, .clients-icon:focus { 
+    fill: var(--accent-text);
+ }*/
 /*Footer*/
 .footer {
    display: flex;
@@ -522,11 +526,12 @@ img {
     margin-bottom: 50px;
     padding: 0;   
 }
-.list-filter .item {
+.item-filter:not(:last-child) {
     margin-right: 8px;
 }
-.list-filter .item:last-childer {
-    margin-right: 0px;
+.item-filter button:hover,
+.item-filter button:focus {
+    background-color: #2196f3;
 }
 .button-list {
     padding-top: 6px;
@@ -544,10 +549,10 @@ img {
     line-height: 1.7;   
     text-align: center;
 }
-.list-filter:hover,
-.list-filter:focus {
-    background-color: var(--accent-text);
-    color: var(--herotitle);
+.button-list:hover,
+.button-list:focus {
+    color: #FFFFFF;
+    ;
 }
 
        /*Progect*/
